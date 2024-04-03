@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #a5d9ec;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 6px;
+  border-radius: 8px;
+  background: deeppink;
+  margin-top: -5px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: rgb(83, 151, 240);
+}
+
+.tool-button:not(:nth-of-type(1)) {
+  margin-left: 24px;
+}
+
+.activeItem {
+  background: hsl(320, 79%, 78%);
+}
+
+.active {
+  outline: 2px dashed hsl(0deg 50% 0%/0.7);
+  outline-offset: 2px;
+}
+
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
